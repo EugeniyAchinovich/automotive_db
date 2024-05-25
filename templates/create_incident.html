@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Добавление Данных об Инциденте
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+   <h1>Добавление Данных об Инциденте</h1>
+   <form method="post">
+       <input type="text" name="date" id="date" class="form-control" placeholder="Дата и время (гггг-мм-дд чч:мм:сс)"><br>
+       <input type="text" name="location" id="location" class="form-control" placeholder="Место происшествия"><br>
+       <input type="text" name="description" id="description" class="form-control" placeholder="Описание"><br>
+       <input type="text" name="status" id="status" class="form-control" placeholder="Статус"><br>
+       <select name="car_id" id="car_id" class="form-control" placeholder="Автомобиль">
+           <option value="1">Автомобиль 1</option>
+           <option value="2">Автомобиль 2</option>
+           <option value="3">Автомобиль 3</option>
+       </select><br>
+       <input type="submit" class="btn btn-primary" value="Далее"><br>
+   </form>
+</div>
+{% endblock %}

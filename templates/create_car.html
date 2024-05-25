@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Добавление Автомобиля
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+   <h1>Добавление Автомобиля</h1>
+   <form method="post">
+       <input type="text" name="make" id="make" class="form-control" placeholder="Марка"><br>
+       <input type="text" name="model" id="model" class="form-control" placeholder="Модель"><br>
+       <input type="text" name="year" id="year" class="form-control" placeholder="Год выпуска"><br>
+       <input type="text" name="color" id="color" class="form-control" placeholder="Цвет"><br>
+       <select name="owner_id" id="owner_id" class="form-control" placeholder="Владелец">
+           <option value="1">Владелец 1</option>
+           <option value="2">Владелец 2</option>
+           <option value="3">Владелец 3</option>
+       </select><br>
+       <input type="submit" class="btn btn-primary" value="Далее"><br>
+   </form>
+</div>
+{% endblock %}

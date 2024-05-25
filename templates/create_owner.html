@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Добавление Владельца автомобиля
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+   <h1>Добавление Владельца автомобиля</h1>
+   <form method="post">
+       <input type="text" name="name" id="name" class="form-control" placeholder="Имя владельца"><br>
+       <input type="text" name="contact_info" id="contact_info" class="form-control" placeholder="Контактная информация"><br>
+       <input type="submit" class="btn btn-primary" value="Далее"><br>
+   </form>
+</div>
+{% endblock %}

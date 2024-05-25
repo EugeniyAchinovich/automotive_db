@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Добавление Данных о Техосмотре
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+   <h1>Добавление Данных о Техосмотре</h1>
+   <form method="post">
+       <input type="text" name="date" id="date" class="form-control" placeholder="Дата и время (гггг-мм-дд чч:мм:сс)"><br>
+       <input type="text" name="result" id="result" class="form-control" placeholder="Результат"><br>
+       <input type="text" name="next_inspection" id="next_inspection" class="form-control" placeholder="Следующий техосмотр (гггг-мм-дд)"><br>
+       <select name="car_id" id="car_id" class="form-control" placeholder="Автомобиль">
+           <option value="1">Автомобиль 1</option>
+           <option value="2">Автомобиль 2</option>
+           <option value="3">Автомобиль 3</option>
+       </select><br>
+       <input type="submit" class="btn btn-primary" value="Далее"><br>
+   </form>
+</div>
+{% endblock %}

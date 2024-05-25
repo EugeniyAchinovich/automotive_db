@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Обновление
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+  <h1>Обновление данных</h1>
+  <form method="post">
+    <input type="text" name="name" id="name" class="form-control" placeholder="Имя владельца"><br>
+    <input type="text" name="contact_info" id="contact_info" class="form-control" placeholder="Контактная информация"><br>
+    <input type="submit" class="btn btn-primary" value="Добавить Владельца"><br>
+    <input type="submit" class="btn btn_succes" value="Обновить"><br>
+  </form>
+</div>
+{% endblock %}

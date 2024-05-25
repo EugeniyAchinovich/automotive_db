@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Добавление Данных об ОСАГО
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+   <h1>Добавление Данных об ОСАГО</h1>
+   <form method="post">
+       <input type="text" name="insurance_company" id="insurance_company" class="form-control" placeholder="Страховая компания"><br>
+       <input type="text" name="policy_number" id="policy_number" class="form-control" placeholder="Номер полиса"><br>
+       <input type="text" name="date1" id="date1" class="form-control" placeholder="Дата начала (гггг-мм-дд)"><br>
+       <input type="text" name="date2" id="date2" class="form-control" placeholder="Дата окончания (гггг-мм-дд)"><br>
+       <input type="text" name="amount" id="amount" class="form-control" placeholder="Сумма страхования"><br>
+       <select name="car_id" id="car_id" class="form-control" placeholder="Автомобиль">
+           <option value="1">Автомобиль 1</option>
+           <option value="2">Автомобиль 2</option>
+           <option value="3">Автомобиль 3</option>
+       </select><br>
+       <input type="submit" class="btn btn-primary" value="Далее"><br>
+   </form>
+</div>
+{% endblock %}
